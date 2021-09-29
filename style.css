@@ -1,0 +1,136 @@
+
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-teal: hsl(184, 100%, 22%);
+  --color-green: hsl(179, 100%, 13%);
+}
+* {
+  box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card {
+	padding: 2rem;
+	border: none;
+
+}
+
+.orange-bg {
+  background: var(--color-orange);
+	max-width: 25rem;
+}
+
+.teal-bg {
+  background: var(--color-teal);
+	max-width: 25rem;
+}
+
+.green-bg {
+  background: var(--color-green);
+	max-width: 25rem;
+}
+
+.cards {
+	 display: flex;
+	 border-radius: 15px;
+	 overflow: hidden;
+	 border: none;
+}
+
+.cards p {
+font-size: 15px;
+color: hsla(0, 0%, 100%, 0.75);
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400;
+margin-top: 2rem;
+margin-right: 30px
+}
+
+.cards h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-weight: 700;
+	color: hsl(0, 0%, 95%);
+	margin-top: 2rem;
+}
+
+ h1, p {
+	 margin-left: 2.5rem;
+ }
+
+ img {
+	 margin-top: 2rem;
+	 margin-left: 2.5rem;
+ }
+
+@media screen and (max-width: 660px) {
+	.cards {
+		display: flex;
+		flex-direction: column;
+		margin: 15px;
+	}
+}
+
+/*hover-start*/
+#button1:hover {
+background: rgba(255, 0, 0, 0) ;
+border: white solid 2px;
+color: rgb(255, 255, 255);
+}
+
+#button2:hover {
+background: rgba(255, 0, 0, 0) ;
+border: white solid 2px;
+color: rgb(255, 255, 255);
+}
+
+#button3:hover {
+background: rgba(255, 0, 0, 0) ;
+border: white solid 2px;
+color: rgb(255, 255, 255);
+}
+/*hover-end*/
+/*button#-start*/
+#button1 {
+	border-radius: 30px;
+	padding: 10px 15px 10px 15px;
+	margin-left: 2.5rem;
+	margin-top: 10rem;
+	border: 2px solid rgba(75, 33, 29, 0);
+	background: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
+	margin-bottom: 40px;
+	color: orange;
+
+}
+
+#button2 {
+	border-radius: 30px;
+	padding: 10px 15px 10px 15px;
+	margin-left: 2.5rem;
+	margin-top: 10rem;
+	border: 2px solid rgba(75, 33, 29, 0);
+	background: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
+	margin-bottom: 40px;
+	color: var(--color-teal);
+}
+
+#button3 {
+	border-radius: 30px;
+	padding: 10px 15px 10px 15px;
+	margin-left: 2.5rem;
+	margin-top: 10rem;
+	border: 2px solid rgba(75, 33, 29, 0);
+	background: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
+	margin-bottom: 40px;
+	color: var(--color-green);
+}
+/*button#-end*/
